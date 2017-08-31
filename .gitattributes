@@ -1,2 +1,16 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+class DailyTemp {
+    public static void main(String[] args) {
+        int[] temp = {22, 20, 24, 25, 26, 27, 25}; // Temperature in the last 7 days (23rd Aug - 30th Aug)
+        int total = 0;
+        for (int element : temp) {
+            total += element;
+        }
+
+        int average = 0;
+        if (temp.length > 0) {
+            average = total / temp.length;
+        }
+
+        System.out.println("The average temperature in the last 7 days has been " + average);
+    }
+}
